@@ -12,8 +12,8 @@ $grayishBlue: hsl(246, 25%, 77%);
 body {
 	background-image: url("/images/bg-intro-mobile.png");
 	background-repeat: no-repeat;
-	width: 300px;
-	margin: 0 auto;
+	width: 310px;
+	margin: 2rem auto;
 	background-color: $Red;
 	background-position: center;
 	background-size: 110%;
@@ -28,11 +28,26 @@ body {
 	color: whitesmoke;
 }
 
+.title {
+	width: 80%;
+	font-size: 1.5rem;
+	margin: 0 auto;
+}
+
+.para {
+	font-weight: 500;
+	font-size: 0.95rem;
+}
+
 .trial {
 	background-color: $Blue;
 	border-radius: 8px;
 	text-align: center;
-	padding: 10px 0;
+	padding: 15px 0;
+	font-size: 0.85rem;
+	line-height: 1.8;
+	margin-bottom: 1.5rem;
+	box-shadow: 0px 7px 0px rgba(0, 0, 0, 0.18);
 
 	&__span {
 		font-weight: 600;
@@ -41,8 +56,9 @@ body {
 }
 
 form {
-	background-color: whitesmoke;
+	background-color: white;
 	border-radius: 8px;
+	padding: 0.5rem 0.25rem;
 }
 
 .btn {
@@ -50,31 +66,73 @@ form {
 	border: none;
 	border-radius: 8px;
 	margin: 0 auto;
-	padding: 15px px;
 }
 
 input {
 	display: block;
-	margin: 0 auto;
+	margin: 1rem auto;
+	padding: 1.3em;
+	font-size: 0.8rem;
+	border: 1px solid $grayishBlue;
+	border-radius: 5px;
+	width: 78%;
+
+	&::placeholder {
+		font-weight: 600;
+	}
 }
 
-input,
+.error-message {
+	text-align: right;
+	display: block;
+	margin-top: -15px;
+	font-size: 12px;
+	color: red;
+	padding-right: 15px;
+}
+
 .btn {
-	width: 80%;
+	padding: 1rem 2rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	width: 90%;
+	font-weight: 600;
+	box-shadow: 0px 3px 2px hsla(154, 59%, 33%, 0.8);
+	cursor: pointer;
+	transition: all 0.3s ease-in;
+
+	&:hover {
+		background-color: $Blue;
+	}
+
+	&:active {
+		transform: translateY(2px);
+		box-shadow: none;
+	}
+}
+
+.icon {
+	width: 24px;
+	height: 24px;
+	position: absolute;
+	top: 16px;
+	right: 20px;
+	pointer-events: none;
+	z-index: 2;
+}
+
+.input-group {
+	position: relative;
 }
 
 .terms {
 	color: $grayishBlue;
-	font-size: 12px;
+	font-size: 0.7rem;
+	width: 80%;
+	margin: 0.55rem auto;
 
 	&__span {
 		color: $Red;
 		font-weight: 600;
 	}
-}
-
-input:invalid:required {
-	background-image: url("/images/icon-error.svg");
-	background-repeat: no-repeat;
-	background-position: right;
 }
