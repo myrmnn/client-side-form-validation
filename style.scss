@@ -1,0 +1,80 @@
+//Primary
+$Red: hsl(0, 100%, 74%);
+$Green: hsl(154, 59%, 51%);
+
+//Accent
+$Blue: hsl(248, 32%, 49%);
+
+//Neutral
+$darkBlue: hsl(249, 10%, 26%);
+$grayishBlue: hsl(246, 25%, 77%);
+
+body {
+	background-image: url("/images/bg-intro-mobile.png");
+	background-repeat: no-repeat;
+	width: 300px;
+	margin: 0 auto;
+	background-color: $Red;
+	background-position: center;
+	background-size: 110%;
+	font-family: "Poppins", sans-serif;
+	text-align: center;
+}
+
+.title,
+.para,
+.trial,
+.btn {
+	color: whitesmoke;
+}
+
+.trial {
+	background-color: $Blue;
+	border-radius: 8px;
+	text-align: center;
+	padding: 10px 0;
+
+	&__span {
+		font-weight: 600;
+		display: block;
+	}
+}
+
+form {
+	background-color: whitesmoke;
+	border-radius: 8px;
+}
+
+.btn {
+	background-color: $Green;
+	border: none;
+	border-radius: 8px;
+	margin: 0 auto;
+	padding: 15px px;
+}
+
+input {
+	display: block;
+	margin: 0 auto;
+}
+
+input,
+.btn {
+	width: 80%;
+}
+
+.terms {
+	color: $grayishBlue;
+	font-size: 12px;
+
+	&__span {
+		color: $Red;
+		font-weight: 600;
+	}
+}
+
+input:invalid:required {
+	background-image: url("/images/icon-error.svg");
+	background-repeat: no-repeat;
+	background-position: right;
+}

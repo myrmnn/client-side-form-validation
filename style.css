@@ -1,0 +1,70 @@
+body {
+  background-image: url("/images/bg-intro-mobile.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  margin: 0 auto;
+  background-color: #ff7a7a;
+  background-position: center;
+  background-size: 110%;
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.title,
+.para,
+.trial,
+.btn {
+  color: whitesmoke;
+}
+
+.trial {
+  background-color: #6055a5;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.trial__span {
+  font-weight: 600;
+  display: block;
+}
+
+form {
+  background-color: whitesmoke;
+  border-radius: 8px;
+}
+
+.btn {
+  background-color: #38cc8c;
+  border: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  padding: 15px px;
+}
+
+input {
+  display: block;
+  margin: 0 auto;
+}
+
+input,
+.btn {
+  width: 80%;
+}
+
+.terms {
+  color: #b9b6d3;
+  font-size: 12px;
+}
+
+.terms__span {
+  color: #ff7a7a;
+  font-weight: 600;
+}
+
+input:invalid:required {
+  background-image: url("/images/icon-error.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+}
+/*# sourceMappingURL=style.css.map */
