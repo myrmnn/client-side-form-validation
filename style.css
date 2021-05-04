@@ -93,6 +93,14 @@ input::placeholder {
   padding-right: 15px;
 }
 
+.error-message-hidden {
+  display: none;
+}
+
+.error-message-show {
+  display: block;
+}
+
 .btn {
   padding: 1rem 2rem;
   text-transform: uppercase;
@@ -125,6 +133,11 @@ input::placeholder {
   right: 20px;
   pointer-events: none;
   z-index: 2;
+  display: none;
+}
+
+.icon-show {
+  display: inline-block;
 }
 
 .input-group {

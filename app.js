@@ -1,5 +1,4 @@
 //es6 class for reusability
-
 class FormValidator {
 	constructor(form, fields) {
 		this.form = form;
@@ -7,8 +6,28 @@ class FormValidator {
 	}
 
 	initialize() {
-		console.log("form", this.form);
-		console.log("fields", this.fields);
+		this.validateOnSubmit();
+	}
+
+	validateOnSubmit() {
+		this.form.addEventListener("submit", (e) => {
+			e.preventDefault();
+			this.fields.forEach((field) => {
+				const input = document.querySelector(`.${field}`);
+				this.validateInput(input);
+			});
+		});
+	}
+
+	validateInput(input) {
+		if (input) {
+			input.nextElementSibling.classList.remove("error-message-show");
+			input.nextElementSibling.nextElementSibling.classList.remove("icon-show");
+		}
+		if (input.value === "") {
+			input.nextElementSibling.classList.add("error-message-show");
+			input.nextElementSibling.nextElementSibling.classList.add("icon-show");
+		}
 	}
 }
 

@@ -55,15 +55,12 @@
 			</div>
 			<form action="#" class="form">
 				<div class="input-group">
-					<input
-						class="firstname"
-						type="text"
-						placeholder="First Name"
-						required
-					/>
-					<span class="error-message">First name cannot be empty</span>
+					<input class="firstname" type="text" placeholder="First Name" />
+					<span class="error-message error-message-hidden"
+						>First name cannot be empty</span
+					>
 					<svg
-						class="icon icon-error hidden hidden"
+						class="icon"
 						width="24"
 						height="24"
 						xmlns="http://www.w3.org/2000/svg"
@@ -76,15 +73,12 @@
 					</svg>
 				</div>
 				<div class="input-group">
-					<input
-						class="lastname"
-						type="text"
-						placeholder="Last Name"
-						required
-					/>
-					<span class="error-message">Last Name cannot be empty</span>
+					<input class="lastname" type="text" placeholder="Last Name" />
+					<span class="error-message error-message-hidden"
+						>Last Name cannot be empty</span
+					>
 					<svg
-						class="icon icon-error hidden hidden"
+						class="icon"
 						width="24"
 						height="24"
 						xmlns="http://www.w3.org/2000/svg"
@@ -97,14 +91,12 @@
 					</svg>
 				</div>
 				<div class="input-group">
-					<input
-						class="email"
-						type="email"
-						placeholder="Email Address"
-						required
-					/>
+					<input class="email" type="email" placeholder="Email Address" />
+					<span class="error-message error-message-hidden"
+						>Looks like this is not an email</span
+					>
 					<svg
-						class="icon icon-error hidden hidden"
+						class="icon"
 						width="24"
 						height="24"
 						xmlns="http://www.w3.org/2000/svg"
@@ -115,18 +107,14 @@
 							<rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
 						</g>
 					</svg>
-					<span class="error-message">Looks like this is not an email</span>
 				</div>
 				<div class="input-group">
-					<input
-						class="password"
-						type="password"
-						placeholder="Password"
-						required
-					/>
-
+					<input class="password" type="password" placeholder="Password" />
+					<span class="error-message error-message-hidden"
+						>Password cannot be empty</span
+					>
 					<svg
-						class="icon icon-error hidden hidden"
+						class="icon"
 						width="24"
 						height="24"
 						xmlns="http://www.w3.org/2000/svg"
@@ -137,8 +125,6 @@
 							<rect fill="#FFF" x="11" y="17" width="2" height="2" rx="1" />
 						</g>
 					</svg>
-
-					<span class="error-message">Password cannot be empty</span>
 				</div>
 
 				<button class="btn">Claim your free trial</button>
@@ -161,5 +147,6 @@
 				>. Coded by <a href="#">Your Name Here</a>.
 			</p>
 		</footer>
+		<script src="app.js"></script>
 	</body>
 </html>

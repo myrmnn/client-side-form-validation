@@ -89,6 +89,14 @@ input {
 	font-size: 12px;
 	color: red;
 	padding-right: 15px;
+
+	&-hidden {
+		display: none;
+	}
+
+	&-show {
+		display: block;
+	}
 }
 
 .btn {
@@ -119,6 +127,11 @@ input {
 	right: 20px;
 	pointer-events: none;
 	z-index: 2;
+	display: none;
+
+	&-show {
+		display: inline-block;
+	}
 }
 
 .input-group {
