@@ -9,6 +9,12 @@ body {
   text-align: center;
 }
 
+@media screen and (min-width: 1000px) {
+  body {
+    background-image: url("/images/bg-intro-desktop.png");
+  }
+}
+
 .title,
 .para,
 .trial,
@@ -22,9 +28,23 @@ body {
   margin: 0 auto;
 }
 
+@media screen and (min-width: 1000px) {
+  .title {
+    width: 100%;
+    text-align: left;
+    font-size: 2.5rem;
+  }
+}
+
 .para {
   font-weight: 500;
   font-size: 0.95rem;
+}
+
+@media screen and (min-width: 1000px) {
+  .para {
+    text-align: left;
+  }
 }
 
 .trial {
@@ -92,6 +112,12 @@ input::placeholder {
   padding-right: 15px;
 }
 
+@media screen and (min-width: 1000px) {
+  .error-message {
+    padding-right: 38px;
+  }
+}
+
 .error-message-hidden {
   display: none;
 }
@@ -139,6 +165,12 @@ input::placeholder {
   display: inline-block;
 }
 
+@media screen and (min-width: 1000px) {
+  .icon {
+    right: 45px;
+  }
+}
+
 .input-group {
   position: relative;
 }
@@ -183,5 +215,20 @@ input::placeholder {
         -ms-flex-pack: center;
             justify-content: center;
   }
+}
+
+@media screen and (min-width: 1000px) {
+  .bottom-right {
+    width: 50%;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: #6055a5;
 }
 /*# sourceMappingURL=style.css.map */
