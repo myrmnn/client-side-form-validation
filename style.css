@@ -16,7 +16,6 @@ body {
 }
 
 .wrapper {
-  height: 100vh;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +30,12 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media screen and (min-width: 1000px) {
+  .wrapper {
+    height: 100vh;
+  }
 }
 
 .title,
@@ -220,7 +225,7 @@ input::placeholder {
 }
 
 @media screen and (min-width: 1000px) {
-  .top-left {
+  .intro {
     width: 50%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -236,7 +241,7 @@ input::placeholder {
 }
 
 @media screen and (min-width: 1000px) {
-  .bottom-right {
+  .validation {
     width: 50%;
   }
 }

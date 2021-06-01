@@ -25,12 +25,15 @@ body {
 }
 
 .wrapper {
-	height: 100vh;
 	width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	flex-direction: column;
+
+	@media screen and (min-width: 1000px) {
+		height: 100vh;
+	}
 }
 
 .title,
@@ -189,7 +192,7 @@ input {
 	}
 }
 
-.top-left {
+.intro {
 	@media screen and (min-width: 1000px) {
 		width: 50%;
 		display: flex;
@@ -198,7 +201,7 @@ input {
 	}
 }
 
-.bottom-right {
+.validation {
 	@media screen and (min-width: 1000px) {
 		width: 50%;
 	}
